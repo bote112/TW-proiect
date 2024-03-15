@@ -1,0 +1,465 @@
+head{
+    font-family: "Montserrat";
+}
+
+body{
+    background-color: #449DD1;
+    font-family: "Montserrat",sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+
+}
+
+a{
+    text-decoration: none;
+}
+    
+li{
+    list-style: none;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #4e3d42;
+    color: #fff;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    max-height: 12vh;
+
+    
+}
+
+.nav-links a{
+    color: #fff;
+}
+
+.logo {
+    position: relative;
+    font-weight: 900;
+    font-size: 4em;
+
+  }
+  .logo .letters {
+    position:absolute;
+    margin: auto;
+    left: 0;
+    top: -0.55em;
+    right: 0;
+    opacity: 0;
+    text-align: center;
+    align-content: center;
+  }
+  
+  
+
+.nav-links{
+    display: flex;
+    gap: 1em;
+    font-size: 2em;
+}
+
+.nav-links li:hover{
+    background-color: #382d30;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.nav-links li{
+    padding: 5px 14px;
+}
+
+.services{
+    position: relative;
+}
+
+.dropdown{
+    background-color: rgb(1,139,139);
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 100%;
+    left:-5%;
+}
+
+.dropdown li+li{
+    margin-top: 10px;
+}
+
+.dropdown li{
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover{
+    background-color: #4c9e9e;
+}
+
+.services:hover .dropdown{
+    display: block;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+.hamburger{
+    display:none;
+    font-size: 24px;
+    user-select: none;
+}
+
+
+
+
+
+#rotisat{
+    display: flex;
+    flex-direction: row;
+}
+
+#prajit{
+    display: flex;
+    flex-direction: row;
+}
+
+#tiki{
+    display: flex;
+    flex-direction: row;
+}
+
+#rulada{
+    display: flex;
+    flex-direction: row;
+}
+
+.poza{
+    width: 65vw;
+    margin: 3vw;
+
+}
+
+.nume{
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    margin-left: 5.05vw;
+    padding-right: 20vw;
+    transition: padding-right 1s ease-in-out;
+    opacity: 1;
+    
+}
+
+.reteta{
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    transition: margin-left 1s ease-in-out, padding-right 1s ease-in-out, background-color 0.5s ease-in-out;
+
+
+   
+}
+#rotisat > .nume:hover{
+    padding-right: 0;
+}
+
+#rotisat > .reteta:hover{
+    margin-left: -34rem;
+    padding-right: 12vw;
+    background-color: rgba(255, 255, 255, 1);
+
+}
+
+#prajit > .nume:hover{
+    padding-right: 0;
+}
+
+#prajit > .reteta:hover{
+    margin-left: -34rem;
+    padding-right: 12vw;
+    background-color: rgba(255, 255, 255, 1);
+
+}
+
+#tiki > .nume:hover{
+    padding-right: 0;
+}
+
+#tiki > .reteta:hover{
+    margin-left: -34rem;
+    padding-right: 12vw;
+    background-color: rgba(255, 255, 255, 1);
+
+}
+
+#rulada > .nume:hover{
+    padding-right: 0;
+}
+
+#rulada > .reteta:hover{
+    margin-left: -34rem;
+    padding-right: 12vw;
+    background-color: rgba(255, 255, 255, 1);
+
+}
+
+    .wishlist-button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 20px;
+        background-color: #4e3d42;
+        color: #fff;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5em;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .wishlist-button:hover {
+        background-color: #382d30;
+        color: white;
+    }
+
+    .wishlist-container {
+        margin: 20px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+
+
+    .rounded-image {
+        border-radius: 20%;
+      }
+      
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .navbar {
+        flex-direction: column;
+      }
+    
+      .nav-links {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+      }
+    
+      .nav-links {
+        display: flex;
+      }
+    
+      .nav-links li:hover {
+        background-color: #382d30;
+        border-radius: 5px;
+        transition: 0.3s ease;
+      }
+
+      .dropdown{
+        top: 100%;
+        left:10%;
+      }
+
+      .dropdown li {
+        padding: 0.5em;
+        width: 84%;
+      }
+
+      .dropdown li:hover{
+        background-color: #4c9e9e;
+        }
+    
+        .poza{
+            width: 40vw; 
+        }
+
+        .nume{
+            padding-right: 10vw;
+            transition: none;
+        }
+
+        .reteta{
+            transition: none;
+            font-size: 1rem ;
+        }
+        #rotisat >.nume:hover{
+            padding-right: 10vw;
+        }
+
+        #rotisat >.reteta:hover{
+            margin-left: 0;
+            padding-right: 0;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        #prajit >.nume:hover{
+            padding-right: 10vw;
+        }
+
+        #prajit >.reteta:hover{
+            margin-left: 0;
+            padding-right: 0;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        #tiki >.nume:hover{
+            padding-right: 10vw;
+        }
+
+        #tiki >.reteta:hover{
+            margin-left: 0;
+            padding-right: 0;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        #rulada >.nume:hover{
+            padding-right: 10vw;
+        }
+
+        #rulada >.reteta:hover{
+            margin-left: 0;
+            padding-right: 0;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+@media only screen and (max-width: 1050px) {
+    .navbar{
+        position: relative;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links {
+      display: block;
+    }
+  
+    .nav-links li {
+      padding: 10px;
+    }
+  
+    .nav-links li:hover {
+      background-color: #382d30;
+      border-radius: 5px;
+      transition: 0.3s ease;
+    }
+  
+    
+  
+    .dropdown {
+      top: 100%;
+      left: 0;
+      transform: translateX(75%);
+
+    }
+  
+    .dropdown li {
+      padding: 0.5em;
+      width: 84%;
+    }
+
+    .dropdown li:hover{
+        background-color: #4c9e9e;
+
+    }
+
+    #rotisat{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    #prajit{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    #tiki{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    #rulada{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .poza{
+        width: 95vw;
+    }
+
+    .nume{
+        font-size: 5rem;
+        padding-left:50vw ;
+        padding-right: 50vw;
+        transition: none;
+    }
+
+    .reteta{
+        font-size: 2rem;
+        transition: none;
+        padding-left: 30vw;
+        padding-right: 30vw;
+    }
+
+    #rotisat >.nume:hover{
+        padding-right: 50vw;
+    }
+
+    #rotisat >.reteta:hover{
+        margin-left: 0;
+        padding-right: 30vw;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    #prajit >.nume:hover{
+        padding-right: 50vw;
+    }
+
+    #prajit >.reteta:hover{
+        margin-left: 0;
+        padding-right: 30vw;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    #tiki >.nume:hover{
+        padding-right: 50vw;
+    }
+
+    #tiki >.reteta:hover{
+        margin-left: 0;
+        padding-right: 30vw;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    #rulada >.nume:hover{
+        padding-right: 50vw;
+    }
+
+    #rulada >.reteta:hover{
+        margin-left: 0;
+        padding-right: 30vw;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}

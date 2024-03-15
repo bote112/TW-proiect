@@ -1,0 +1,180 @@
+head{
+    font-family: "Montserrat";
+}
+
+body{
+    background-color: #9CCCb7;
+    font-family: "Montserrat",sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+
+}
+
+a{
+    text-decoration: none;
+}
+    
+li{
+    list-style: none;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #4e3d42;
+    color: #fff;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    max-height: 12vh;
+
+    
+}
+
+.nav-links a{
+    color: #fff;
+}
+
+.logo {
+    position: relative;
+    font-weight: 900;
+    font-size: 4em;
+
+  }
+  .logo .letters {
+    position:absolute;
+    margin: auto;
+    left: 0;
+    top: -0.55em;
+    right: 0;
+    opacity: 0;
+    text-align: center;
+    align-content: center;
+  }
+  
+  
+
+.nav-links{
+    display: flex;
+    gap: 1em;
+    font-size: 2em;
+}
+
+.nav-links li:hover{
+    background-color: #382d30;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.nav-links li{
+    padding: 5px 14px;
+}
+
+.services{
+    position: relative;
+}
+
+.dropdown{
+    background-color: rgb(1,139,139);
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 100%;
+    left:-5%;
+}
+
+.dropdown li+li{
+    margin-top: 10px;
+}
+
+.dropdown li{
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover{
+    background-color: #4c9e9e;
+}
+
+.services:hover .dropdown{
+    display: block;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+.hamburger{
+    display:none;
+    font-size: 24px;
+    user-select: none;
+}
+
+form {
+    width: 40%;
+    padding: 30px;
+    margin-left: 28%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    
+    
+}
+
+form h1 {
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 1em;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    height: 40px;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form input[type="submit"] {
+    display: block;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#goBack {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 1em 2em;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#goBack:hover {
+    background-color: #5a6268;
+}

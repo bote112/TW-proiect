@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sugerează o nouă rețetă</title>
+    <link rel="stylesheet" href="suggest-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <script src="suggest.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">
+            <span class="letters letters-1">ce</span>
+            <span class="letters letters-2">mancam</span>
+            <span class="letters letters-3">azi?</span>
+          </h1>
+          
+          
+        <ul class="nav-links">
+            
+        
+            <li><a href="doidoi.html">Acasa</a></li>
+        <li class="services">
+            <a href="/">Modul Prepararii</a>
+            <ul class="dropdown">
+                <li><a href="https://www.youtube.com/watch?v=KLGSLCaksdY&ab_channel=Tasty" target="_blank">Tigaie</a></li>
+                <li><a href="https://www.youtube.com/watch?v=2BR4LWEO5FE&ab_channel=PetiteMama" target="_blank">Cuptor</a></li>
+                <li><a href="https://www.youtube.com/watch?v=kieGBkOdyMU&ab_channel=Howcast" target="_blank">Fierbere</a></li>
+                <li><a href="https://www.youtube.com/watch?v=K5DRltODdSQ&ab_channel=Munchies" target="_blank">Gratar</a></li> 
+            </ul>
+        </li>
+            <li><a href="pui.html">Pui</a></li>
+            <li><a href="vita.html">Vita</a></li>
+            <li><a href="porc.html">Porc</a></li>
+            <li><a href="peste.html">Peste</a></li>
+            <li><a href="vegan.html">Vegan</a></li>
+           
+
+        
+
+        </ul>
+    </nav>
+
+    <main>
+        <form id="suggestionForm">
+            <label for="name">Nume:</label>
+            <input type="text" id="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        
+            <label for="phone">Telefon:</label>
+            <input type="tel" id="phone" required>
+        
+            <label for="age">Vârstă:</label>
+            <input type="number" id="age" required>
+        
+            <label for="recipeName">Numele Rețetei:</label>
+            <input type="text" id="recipeName" required>
+        
+            <label for="recipeIngredients">Ingredientele Rețetei:</label>
+            <textarea id="recipeIngredients" required></textarea>
+        
+            <label for="recipeInstructions">Instrucțiunile Rețetei:</label>
+            <textarea id="recipeInstructions" required></textarea>
+        
+            <input type="submit" value="Trimite sugestia">
+        </form>
+        
+
+        <button id="goBack">Înapoi la pagina principală</button>
+    </main>
+</body>
+</html>
